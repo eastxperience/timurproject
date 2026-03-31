@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>9D7N Wonders of China – Offer Letter</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --red: #8B0000;
+    --red-mid: #C0392B;
+    --gold: #B8860B;
+    --gold-light: #DAA520;
+    --gold-pale: #FDF3DC;
+    --cream: #FBF7F0;
+    --dark: #1A1010;
+    --gray: #5A5A5A;
+    --light-gray: #F0EDE8;
+    --border: #D4B896;
+  }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    background: #EDE8E0;
+    color: var(--dark);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .page {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+  }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+    background: #1a0a0a;
+  }
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.65;
+    display: block;
+  }
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(80,10,10,0.3) 0%, rgba(10,5,5,0.75) 100%);
+  }
+  .hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .hero-eyebrow {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #DAA520;
+    margin-bottom: 12px;
+  }
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.1;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.7);
+    margin-bottom: 10px;
+  }
+  .hero-sub {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #DAA520;
+    margin-bottom: 16px;
+  }
+  .hero-badge {
+    display: inline-block;
+    border: 1.5px solid #DAA520;
+    color: #DAA520;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 6px 18px;
+  }
+
+  /* ── GOLD DIVIDER ── */
+  .gold-bar {
+    height: 5px;
+    background: linear-gradient(to right, #8B0000, #DAA520, #8B0000);
+  }
+
+  /* ── HIGHLIGHTS STRIP ── */
+  .highlights {
+    background: var(--gold-pale);
+    border-bottom: 2px solid var(--border);
+    padding: 18px 40px;
+    text-align: center;
+  }
+  .highlights-label {
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--red);
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .highlights-items {
+    font-size: 13px;
+    color: var(--dark);
+    font-style: italic;
+    line-height: 1.9;
+  }
+  .highlights-items span {
+    display: inline-block;
+    margin: 0 6px;
+    color: var(--red-mid);
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  /* ── GUARANTEE ── */
+  .guarantee {
+    text-align: center;
+    padding: 14px 40px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 700;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* ── CONTENT WRAPPER ── */
+  .content { padding: 0 48px 48px; }
+
+  /* ── SECTION HEADER ── */
+  .section-header {
+    background: var(--red);
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin: 40px -48px 0;
+    border-bottom: 3px solid var(--gold-light);
+    letter-spacing: 1px;
+  }
+
+  /* ── DAY BLOCK ── */
+  .day-block {
+    margin-top: 32px;
+    border-left: 4px solid var(--red);
+    padding-left: 20px;
+  }
+  .day-header {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--red);
+    margin-bottom: 4px;
+  }
+  .day-meta {
+    font-size: 12px;
+    color: var(--gold);
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  .day-flight {
+    background: var(--gold-pale);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--red);
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  .day-body {
+    font-size: 13.5px;
+    color: #333;
+    line-height: 1.75;
+    margin-bottom: 10px;
+  }
+  .day-attractions {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 10px;
+  }
+  .day-attractions li {
+    padding: 4px 0 4px 20px;
+    position: relative;
+    font-size: 13px;
+    color: #333;
+  }
+  .day-attractions li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: var(--gold-light);
+    font-size: 11px;
+    top: 6px;
+  }
+  .day-attractions li b { color: var(--dark); }
+  .day-hotel {
+    font-size: 12px;
+    color: var(--gray);
+    font-style: italic;
+    margin-top: 6px;
+  }
+
+  /* ── PHOTO GRID ── */
+  .photo-grid {
+    display: grid;
+    gap: 6px;
+    margin: 14px 0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .photo-grid.grid-1 { grid-template-columns: 1fr; height: 220px; }
+  .photo-grid.grid-2 { grid-template-columns: 1fr 1fr; height: 180px; }
+  .photo-grid.grid-3 { grid-template-columns: 2fr 1fr; height: 200px; }
+  .photo-grid.grid-1-2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 140px 140px;
+    height: auto;
+  }
+  .photo-grid .main { grid-column: 1; grid-row: 1 / 3; }
+
+  .photo-item {
+    overflow: hidden;
+    position: relative;
+    background: #c8b89a;
+  }
+  .photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+  .photo-item:hover img { transform: scale(1.04); }
+  .photo-caption {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: rgba(0,0,0,0.55);
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 5px 8px;
+  }
+
+  /* ── PRICE TABLE ── */
+  .price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 13px;
+  }
+  .price-table thead tr {
+    background: var(--red);
+    color: white;
+  }
+  .price-table thead th {
+    padding: 11px 12px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  .price-table tbody tr:nth-child(odd) { background: white; }
+  .price-table tbody tr:nth-child(even) { background: var(--gold-pale); }
+  .price-table tbody td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+  }
+  .price-table tbody td:first-child { text-align: left; font-weight: 700; }
+  .price-table .price-val { color: var(--red); font-weight: 700; }
+  .price-badge {
+    display: inline-block;
+    background: var(--red);
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 2px;
+    margin-left: 4px;
+    vertical-align: middle;
+  }
+
+  .info-box {
+    background: var(--gold-pale);
+    border: 1.5px solid var(--border);
+    border-radius: 4px;
+    padding: 14px 20px;
+    margin-top: 16px;
+    font-size: 13px;
+  }
+  .info-box b { color: var(--red); }
+
+  /* ── INCLUSIONS ── */
+  .inc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-top: 20px;
+    border: 1.5px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .inc-col-header {
+    padding: 12px 16px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+  }
+  .inc-col-header.green { background: #2E7D32; }
+  .inc-col-header.red { background: #C62828; }
+  .inc-col-body {
+    padding: 14px 16px;
+    border-top: 1px solid var(--border);
+  }
+  .inc-col-body.green-bg { background: #F1F8E9; }
+  .inc-col-body.red-bg { background: #FFEBEE; }
+  .inc-item {
+    display: flex;
+    gap: 8px;
+    padding: 4px 0;
+    font-size: 12.5px;
+    color: #333;
+    border-bottom: 1px dashed rgba(0,0,0,0.06);
+  }
+  .inc-item:last-child { border-bottom: none; }
+  .inc-icon { flex-shrink: 0; font-weight: 700; margin-top: 2px; }
+  .inc-icon.g { color: #2E7D32; }
+  .inc-icon.r { color: #C62828; }
+
+  .optional-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-top: 12px;
+    margin-bottom: 4px;
+  }
+
+  /* ── TERMS ── */
+  .terms-block { margin-top: 28px; }
+  .terms-title-bar {
+    text-align: center;
+    padding: 10px;
+    background: var(--gold-pale);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: var(--red);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  .terms-section {
+    margin-bottom: 18px;
+  }
+  .terms-section-title {
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--red);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+    font-family: 'Playfair Display', serif;
+  }
+  .terms-list {
+    list-style: none;
+    padding: 0;
+  }
+  .terms-list li {
+    padding: 3px 0 3px 20px;
+    position: relative;
+    font-size: 12.5px;
+    color: #444;
+    line-height: 1.65;
+  }
+  .terms-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--red);
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  /* ── NOTICE BOX ── */
+  .notice {
+    background: var(--gold-pale);
+    border-top: 3px solid var(--gold-light);
+    border-bottom: 3px solid var(--gold-light);
+    padding: 12px 20px;
+    font-size: 12.5px;
+    font-style: italic;
+    color: #444;
+    margin: 24px 0;
+    text-align: center;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: var(--red);
+    text-align: center;
+    padding: 28px 40px;
+    color: white;
+  }
+  .footer-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: var(--gold-light);
+    margin-bottom: 6px;
+  }
+  .footer-sub {
+    font-size: 11.5px;
+    color: rgba(255,255,255,0.75);
+    font-style: italic;
+    line-height: 1.8;
+  }
+
+  @media print {
+    body { background: white; }
+    .page { box-shadow: none; margin: 0; max-width: 100%; }
+    .photo-item img { break-inside: avoid; }
+  }
+</style>
+
+<script>
+function imgFail(img) {
+  var fb = img.getAttribute('data-fb');
+  if (!fb) return;
+  var list = fb.split('|');
+  var n = parseInt(img.getAttribute('data-n') || '0');
+  if (n < list.length) {
+    img.setAttribute('data-n', n + 1);
+    img.src = list[n];
+  }
+}
+</script>
+</head>
+<body>
+<div class="page">
+
+  <!-- HERO -->
+  <div class="hero">
+    <img src="https://images.pexels.com/photos/26771367/pexels-photo-26771367.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Zhangjiajie National Forest Park" class="hero-img">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Series Group Tour · 2026</div>
+      <div class="hero-title">Wonders of China</div>
+      <div class="hero-sub">Chongqing · Wulong · Fenghuang · Zhangjiajie</div>
+      <div class="hero-badge">9 Hari 7 Malam · Xiamen Airlines</div>
+    </div>
+  </div>
+  <div class="gold-bar"></div>
+
+  <!-- HIGHLIGHTS -->
+  <div class="highlights">
+    <div class="highlights-label">✦ Highlight Destinasi ✦</div>
+    <div class="highlights-items">
+      <span>Liziba LRT</span> · <span>Hongya Cave</span> · <span>Tiansheng Three Bridges</span> · <span>Fairy Mountain</span> ·
+      <span>Fenghuang Ancient City</span> · <span>Tuojiang River</span> · <span>Tianmen Mountain</span> ·
+      <span>Heaven's Gate</span> · <span>Glass Walkway</span> · <span>Bailong Elevator</span> ·
+      <span>Avatar Mountain</span> · <span>Grand Canyon Glass Bridge</span> · <span>Three Gorges Dam</span>
+    </div>
+  </div>
+
+  <!-- GUARANTEE -->
+  <div class="guarantee">★ &nbsp; Guarantee Best Price &amp; Service &nbsp; ★</div>
+
+  <div class="content">
+
+    <!-- ═══ ITINERARY ═══ -->
+    <div class="section-header">📅 &nbsp; Program Perjalanan</div>
+
+    <!-- DAY 1 -->
+    <div class="day-block">
+      <div class="day-header">Hari 01 &nbsp;|&nbsp; Jakarta → Chongqing</div>
+      <div class="day-meta">🍽 Meals on Board</div>
+      <div class="day-flight">✈ CGK (23.20) → CKG (06.20) &nbsp;·&nbsp; Xiamen Airlines MF-8674</div>
+      <p class="day-body">Malam ini kita berkumpul di Bandara Soekarno-Hatta Terminal 3 Ultimate untuk memulai petualangan menakjubkan menuju Chongqing — kota megah di jantung Tiongkok yang menakjubkan.</p>
+      <div class="day-hotel">🏨 Bermalam di Pesawat</div>
+    </div>
+
+    <!-- DAY 2 -->
+    <div class="day-block">
+      <div class="day-header">Hari 02 &nbsp;|&nbsp; Chongqing City Tour</div>
+      <div class="day-meta">🍽 Makan Siang &amp; Makan Malam</div>
+
+      <div class="photo-grid grid-2">
+        <div class="photo-item">
+          <img src="https://images.pexels.com/photos/11975552/pexels-photo-11975552.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="Chongqing Night Skyline" loading="lazy">
+          <div class="photo-caption">Chongqing — Skyline Kota Gunung</div>
+        </div>
+        <div class="photo-item">
+          <img src="https://images.pexels.com/photos/14785197/pexels-photo-14785197.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="Hongya Cave Night Chongqing" loading="lazy">
+          <div class="photo-caption">Hongya Cave — Cahaya Malam Hari</div>
+        </div>
+      </div>
+      <div class="photo-grid grid-1" style="height:185px;margin-top:6px;">
+        <div class="photo-item">
+          <img src="https://images.pexels.com/photos/17244024/pexels-photo-17244024.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="Liziba LRT Chongqing" loading="lazy">
+          <div class="photo-caption">Liziba LRT — Kereta Menembus Gedung Apartemen 19 Lantai</div>
+        </div>
+      </div>
+
+      <p class="day-body">Disambut guide lokal yang ramah, Anda akan menjelajahi Chongqing, sang <em>Mountain City</em>:</p>
+      <ul class="day-attractions">
+        <li><b>Liziba LRT Through the Building</b> — ikon unik kereta menembus gedung apartemen</li>
+        <li><b>Kuixing Building</b> — panorama kota dari ketinggian</li>
+        <li><b>Great Hall of the People</b> — arsitektur megah bergaya Tiongkok klasik</li>
+        <li><b>Jiefangbei Pedestrian Street</b> — pusat perbelanjaan ramai di jantung kota</li>
+        <li><b>Hongya Cave</b> — keajaiban lampu kota bak dunia mimpi di malam hari</li>
+      </ul>
+      <div class="day-hotel">🏨 Hotel ★3 atau ★4 Lokal / Similar</div>
+    </div>
+
+    <!-- DAY 3 -->
+    <div class="day-block">
+      <div class="day-header">Hari 03 &nbsp;|&nbsp; Chongqing → Wulong</div>
+      <div class="day-meta">🍽 Makan Pagi, Siang &amp; Malam</div>
+
+      <div class="photo-grid grid-2">
+        <div class="photo-item">
+          <img src="https://images.pexels.com/photos/33231945/pexels-photo-33231945.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="Tiansheng Three Natural Bridges Wulong" loading="lazy">
+          <div class="photo-caption">Tiansheng Three Natural Bridges — UNESCO Karst</div>
+        </div>
+        <div class="photo-item">
+          <img src="https://images.pexels.com/photos/26771367/pexels-photo-26771367.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="Fairy Mountain Xiannushan Wulong" loading="lazy">
+          <div class="photo-caption">Fairy Mountain (仙女山) — Swiss-nya Chongqing</div>
+        </div>
+      </div>
+
+      <ul class="day-attractions">
+        <li><b>Tiansheng Three Bridges</b> — kawasan karst spektakuler dengan tiga jembatan batu alam raksasa <em>(termasuk elevator &amp; shuttle bus)</em></li>
+        <li><b>Fairy Mountain</b> — "Swiss-nya Chongqing", dataran tinggi dengan pemandangan alam indah dan mini train</li>
+      </ul>
+      <div class="day-hotel">🏨 Hotel ★3 atau ★4 Lokal / Similar</div>
+    </div>
+
+    <!-- DAY 4 -->
+    <div class="day-block">
+      <div class="day-header">Hari 04 &nbsp;|&nbsp; Wulong → Fenghuang Ancient City</div>
+      <div class="day-meta">🍽 Makan Pagi, Siang &amp; Malam</div>
+
+      <div class="photo-grid grid-2">
+        <div class="photo-item">
+          <img src="https://images.pexels.com/photos/30836753/pexels-photo-30836753.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="Fenghuang Ancient City" loading="lazy">
+          <div class="photo-caption">Fenghuang Ancient City</div>
+        </div>
+        <div class="photo-item">
+          <img src="https://images.pexels.com/photos/2872875/pexels-photo-2872875.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="Tuojiang River Fenghuang Night" loading="lazy">
+          <div class="photo-caption">Tuojiang River — Rumah Panggung</div>
+        </div>
+      </div>
+
+      <p class="day-body">Jelajahi kota kuno bersejarah yang mempertahankan keindahan budaya Tiongkok kuno:</p>
+      <ul class="day-attractions">
+        <li><b>Fenghuang Ancient City</b> — kota kuno dengan rumah tradisional tepi sungai <em>(termasuk shuttle bus)</em></li>
+        <li><b>Tuojiang River</b> — sungai utama dengan jembatan batu dan rumah panggung khas</li>
+        <li><b>Wanming Tower</b> — menara klasik landmark ancient city</li>
+        <li><b>Bar Street</b> — kawasan ramai dengan kafe, bar &amp; toko souvenir</li>
+        <li><b>Light Show Malam Hari</b> — pemandangan lampu kota kuno yang memukau</li>
+      </ul>
+      <div class="day-hotel">🏨 Hotel ★3 atau ★4 Lokal / Similar</div>
+    </div>
+
+    <!-- DAY 5 -->
+    <div class="day-block">
+      <div class="day-header">Hari 05 &nbsp;|&nbsp; Fenghuang → Zhangjiajie · Tianmen Mountain</div>
+      <div class="day-meta">🍽 Makan Pagi, Siang &amp; Malam</div>
+
+      <div class="photo-grid grid-3">
+        <div class="photo-item">
+          <img src="https://images.pexels.com/photos/29073775/pexels-photo-29073775.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="Tianmen Cave Heavens Gate" loading="lazy">
+          <div class="photo-caption">Tianmen Cave — Heaven's Gate</div>
+        </div>
+        <div class="photo-item">
+          <img src="https://images.pexels.com/photos/14021069/pexels-photo-14021069.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="Glass Walkway Tianmen Mountain" loading="lazy">
+          <div class="photo-caption">Glass Walkway</div>
+        </div>
+      </div>
+
+      <p class="day-body">Selamat datang di taman nasional paling ikonik Tiongkok!</p>
+      <ul class="day-attractions">
+        <li><b>Cable Car Tianmen Mountain</b> — pemandangan spektakuler pegunungan hijau dan lembah curam</li>
+        <li><b>Tianmen Cave (Heaven's Gate)</b> — lubang alami raksasa di tengah gunung, simbol keagungan alam</li>
+        <li><b>Glass Walkway</b> — jembatan kaca transparan di tepi tebing dengan panorama menakjubkan</li>
+        <li><b>72 Old Building</b> — dekorasi lampu spektakuler di malam hari (photostop)</li>
+      </ul>
+      <div class="day-hotel">🏨 Hotel ★3 atau ★4 Lokal / Similar</div>
+    </div>
+
+    <!-- DAY 6 -->
+    <div class="day-block">
+      <div class="day-header">Hari 06 &nbsp;|&nbsp; Zhangjiajie National Forest Park</div>
+      <div class="day-meta">🍽 Makan Pagi, Siang &amp; Malam</div>
+
+      <div class="photo-grid grid-2">
+        <div class="photo-item">
+          <img src="https://images.pexels.com/photos/34683494/pexels-photo-34683494.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="Avatar Mountain Yuanjiajie Zhangjiajie" loading="lazy">
+          <div class="photo-caption">Avatar Mountain — Yuanjiajie</div>
+        </div>
+        <div class="photo-item">
+          <img src="https://images.pexels.com/photos/33231945/pexels-photo-33231945.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="Bailong Elevator Zhangjiajie" loading="lazy">
+          <div class="photo-caption">Bailong Elevator — Lift Tertinggi Dunia</div>
+        </div>
+      </div>
+
+      <p class="day-body">Hari penuh di taman nasional inspirasi film Avatar!</p>
+      <ul class="day-attractions">
+        <li><b>Bailong Elevator</b> — lift kaca tertinggi di dunia dengan pemandangan tebing batu menjulang</li>
+        <li><b>Avatar Mountain (Yuanjiajie)</b> — formasi batu inspirasi gunung terapung dalam film Avatar</li>
+        <li><b>No. 1 Bridge</b> — jembatan batu alami menghubungkan dua puncak tebing</li>
+        <li><b>Jinbian River</b> — lembah dengan aliran sungai jernih dikelilingi hutan dan tebing</li>
+      </ul>
+      <div class="day-hotel">🏨 Hotel ★3 atau ★4 Lokal / Similar</div>
+    </div>
+
+    <!-- DAY 7 -->
+    <div class="day-block">
+      <div class="day-header">Hari 07 &nbsp;|&nbsp; Zhangjiajie Grand Canyon Glass Bridge</div>
+      <div class="day-meta">🍽 Makan Pagi, Siang &amp; Malam</div>
+
+      <div class="photo-grid grid-1">
+        <div class="photo-item">
+          <img src="https://images.pexels.com/photos/14021069/pexels-photo-14021069.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="Zhangjiajie Grand Canyon Glass Bridge" loading="lazy">
+          <div class="photo-caption">Grand Canyon Glass Bridge — Jembatan Kaca Terpanjang di Dunia</div>
+        </div>
+      </div>
+
+      <ul class="day-attractions">
+        <li><b>Zhangjiajie Grand Canyon Glass Bridge</b> — jembatan kaca terpanjang dan tertinggi di dunia</li>
+        <li><b>Pengalaman 3D VR (Virtual Reality)</b> — sensasi menakjubkan di atas lembah</li>
+      </ul>
+      <div class="day-hotel">🏨 Hotel ★3 atau ★4 Lokal / Similar</div>
+    </div>
+
+    <!-- DAY 8 -->
+    <div class="day-block">
+      <div class="day-header">Hari 08 &nbsp;|&nbsp; Zhangjiajie → Yichang → Jingzhou</div>
+      <div class="day-meta">🍽 Makan Pagi, Siang &amp; Malam</div>
+
+      <div class="photo-grid grid-1">
+        <div class="photo-item">
+          <img src="https://images.pexels.com/photos/11975552/pexels-photo-11975552.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="Three Gorges Dam Yangtze River China" loading="lazy">
+          <div class="photo-caption">Three Gorges Dam — Bendungan Terbesar di Dunia</div>
+        </div>
+      </div>
+
+      <ul class="day-attractions">
+        <li><b>Three Gorges Dam</b> — bendungan hidroelektrik terbesar di dunia di Sungai Yangtze <em>(termasuk shuttle bus)</em></li>
+      </ul>
+      <div class="day-hotel">🏨 Hotel ★3 atau ★4 Lokal / Similar</div>
+    </div>
+
+    <!-- DAY 9 -->
+    <div class="day-block">
+      <div class="day-header">Hari 09 &nbsp;|&nbsp; Jingzhou → Wuhan → Jakarta</div>
+      <div class="day-meta">🍽 Makan Pagi &amp; Makan Siang</div>
+      <div class="day-flight">✈ WUH (16.25) → CGK (21.50) &nbsp;·&nbsp; Xiamen Airlines MF-8683</div>
+      <p class="day-body">Sarapan di hotel, lalu menuju Bandara Wuhan untuk kembali ke tanah air tercinta. Selamat tinggal Tiongkok yang indah — sampai jumpa di petualangan berikutnya! ✨</p>
+    </div>
+
+    <!-- ═══ HARGA ═══ -->
+    <div class="section-header">💰 &nbsp; Harga Paket</div>
+
+    <table class="price-table">
+      <thead>
+        <tr>
+          <th>Tanggal Keberangkatan</th>
+          <th>Dewasa (Twin/Triple)</th>
+          <th>Child + Extra Bed</th>
+          <th>Child No Bed (&lt;6 Thn)</th>
+          <th>Single Suppl.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>9 Mei 2026 <span class="price-badge">Long Weekend</span></td>
+          <td class="price-val">Rp 20.990.000</td>
+          <td class="price-val">Rp 20.990.000</td>
+          <td class="price-val">Rp 20.490.000</td>
+          <td class="price-val">+Rp 3.750.000</td>
+        </tr>
+        <tr>
+          <td>16 Mei 2026 <span class="price-badge">Long Weekend</span></td>
+          <td class="price-val">Rp 20.990.000</td>
+          <td class="price-val">Rp 20.990.000</td>
+          <td class="price-val">Rp 20.490.000</td>
+          <td class="price-val">+Rp 3.750.000</td>
+        </tr>
+        <tr>
+          <td>23 Mei 2026 <span class="price-badge">Idul Adha</span></td>
+          <td class="price-val">Rp 20.990.000</td>
+          <td class="price-val">Rp 20.990.000</td>
+          <td class="price-val">Rp 20.490.000</td>
+          <td class="price-val">+Rp 3.750.000</td>
+        </tr>
+        <tr>
+          <td>28 Mei 2026 <span class="price-badge">Waisak</span></td>
+          <td class="price-val">Rp 20.990.000</td>
+          <td class="price-val">Rp 20.990.000</td>
+          <td class="price-val">Rp 20.490.000</td>
+          <td class="price-val">+Rp 3.750.000</td>
+        </tr>
+        <tr>
+          <td>30 Mei 2026 <span class="price-badge">Waisak</span></td>
+          <td class="price-val">Rp 20.990.000</td>
+          <td class="price-val">Rp 20.990.000</td>
+          <td class="price-val">Rp 20.490.000</td>
+          <td class="price-val">+Rp 3.750.000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="info-box">
+      <b>Infant Flat Rate (&lt;23 Bulan):</b> Rp 7.750.000 &nbsp;&nbsp;|&nbsp;&nbsp;
+      <b>Minimal Keberangkatan:</b> 15 Pax (+ 1 Tour Leader) &nbsp;&nbsp;|&nbsp;&nbsp;
+      <b>Deposit Pendaftaran:</b> Rp 10.000.000 (First Come, First Served) &nbsp;&nbsp;|&nbsp;&nbsp;
+      <b>Pelunasan Peak Season:</b> H-25 sebelum keberangkatan
+    </div>
+
+    <!-- ═══ FASILITAS ═══ -->
+    <div class="section-header">📋 &nbsp; Fasilitas Paket</div>
+
+    <div class="inc-grid">
+      <div class="inc-col-header green">✓ &nbsp; Sudah Termasuk</div>
+      <div class="inc-col-header red">✗ &nbsp; Belum Termasuk</div>
+      <div class="inc-col-body green-bg">
+        <div class="inc-item"><span class="inc-icon g">✓</span><span>Tiket International Xiamen Airlines, Economy (termasuk pajak internasional) — <b>Tiket Grup</b> Fixed Date &amp; No Extend</span></div>
+        <div class="inc-item"><span class="inc-icon g">✓</span><span>Bagasi 23 kg (1 piece) sesuai ketentuan Airlines</span></div>
+        <div class="inc-item"><span class="inc-icon g">✓</span><span>Akomodasi Hotel ★3 atau ★4 Lokal (Twin)</span></div>
+        <div class="inc-item"><span class="inc-icon g">✓</span><span>Transportasi Bus Pariwisata &amp; Tiket Masuk Objek Wisata</span></div>
+        <div class="inc-item"><span class="inc-icon g">✓</span><span>Acara Tour &amp; Makan sesuai program paket</span></div>
+        <div class="inc-item"><span class="inc-icon g">✓</span><span>Air Mineral 1 Botol per Hari</span></div>
+        <div class="inc-item"><span class="inc-icon g">✓</span><span>Travel Kits (Luggage Tag)</span></div>
+        <div class="inc-item"><span class="inc-icon g">✓</span><span>Travel Insurance</span></div>
+        <div class="inc-item"><span class="inc-icon g">✓</span><span>Visa Group China: <b>Rp 800.000</b> <em>(*dapat berubah)</em></span></div>
+      </div>
+      <div class="inc-col-body red-bg">
+        <div class="inc-item"><span class="inc-icon r">✗</span><span>Tipping Tour Leader, Local Guide &amp; Driver: <b>Rp 1.000.000/Pax</b></span></div>
+        <div class="inc-item"><span class="inc-icon r">✗</span><span>Tips Porter, Mini Bar, Laundry, Telepon, Kelebihan Bagasi</span></div>
+        <div class="inc-item"><span class="inc-icon r">✗</span><span>PCR Test / Rapid Test Antigen (jika dibutuhkan)</span></div>
+        <div class="optional-label">Optional:</div>
+        <div class="inc-item"><span class="inc-icon r">◦</span><span>Simcard / eSIM</span></div>
+        <div class="optional-label">Optional Tour:</div>
+        <div class="inc-item"><span class="inc-icon r">◦</span><span>Chongqing Two Rivers Cruise</span></div>
+        <div class="inc-item"><span class="inc-icon r">◦</span><span>Tianmenshan Fox Lady Show</span></div>
+        <div class="inc-item"><span class="inc-icon r">◦</span><span>Huanglong Cave (termasuk round-trip cruise)</span></div>
+      </div>
+    </div>
+
+    <div class="notice">
+      ⚠ Tour ini merupakan tour bersubsidi dengan mengunjungi Shopping Stop.<br>
+      Peserta yang tidak mengunjungi shopping stop akan dikenakan biaya penalti sesuai ketentuan.
+    </div>
+
+    <!-- ═══ SYARAT & KETENTUAN ═══ -->
+    <div class="section-header">📜 &nbsp; Syarat dan Ketentuan</div>
+
+    <div class="terms-block">
+      <div class="terms-title-bar">KONSORSIUM B2B (SERIES GROUP TOUR) — BERLAKU MULAI 1 MARET 2026 S/D UFN</div>
+
+      <div class="terms-section">
+        <div class="terms-section-title">1. Ketentuan Umum</div>
+        <ul class="terms-list">
+          <li>Program Series Group Tour merupakan konsorsium B2B gabungan beberapa biro perjalanan dari seluruh Indonesia.</li>
+          <li>Sistem reservasi menggunakan prinsip <em>first come, first served</em>.</li>
+          <li>Peserta yang konfirmasi keikutsertaan wajib membayar Down Payment (DP) dan melampirkan salinan paspor yang masih berlaku minimal 6 bulan sejak tanggal kepulangan.</li>
+          <li>Konfirmasi keikutsertaan diberikan setelah pembayaran DP diterima.</li>
+          <li>Peserta yang belum membayar DP dapat tergeser. DP kurang dari ketentuan dapat menyebabkan pembatalan sepihak tanpa pengembalian dana.</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <div class="terms-section-title">2. Perubahan Nama</div>
+        <ul class="terms-list">
+          <li>Beberapa maskapai tidak memperkenankan perubahan nama. Permohonan bersifat pengajuan sesuai kebijakan maskapai.</li>
+          <li>Jika perubahan tidak dapat dilakukan, mengacu pada kebijakan pembatalan <em>own reason</em>.</li>
+          <li>Nama tambahan pada halaman ke-4 paspor wajib dilampirkan saat pemesanan.</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <div class="terms-section-title">3. Ketentuan Usia dan Kondisi Khusus</div>
+        <ul class="terms-list">
+          <li>Peserta usia di atas 69 tahun dan/atau memiliki keterbatasan fisik/mental wajib didampingi pendamping.</li>
+          <li>Peserta usia di atas 69 tahun wajib membayar premi tambahan asuransi perjalanan.</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <div class="terms-section-title">4. Harga dan Ketentuan Biaya</div>
+        <ul class="terms-list">
+          <li>Harga tour bersifat <em>all-in</em> (termasuk pajak internasional).</li>
+          <li>Tarif dasar mengikat setelah pembayaran DP diterima.</li>
+          <li>Komponen airport tax internasional, tipping, dan visa dapat berubah sewaktu-waktu.</li>
+          <li>Sebelum pembayaran DP, harga dasar tour dapat berubah sewaktu-waktu.</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <div class="terms-section-title">5. Ketentuan Pembayaran</div>
+        <ul class="terms-list">
+          <li><em>Low Season</em> — Pelunasan rute Asia dengan Visa: Maksimal H-23 | Rute Australia/Eropa: Maksimal H-31.</li>
+          <li><em>Peak Season (Lebaran/Tahun Baru)</em> — Pelunasan rute Asia: Maksimal H-25 | Rute Australia/Eropa: Maksimal H-31.</li>
+          <li>Ketentuan tempo pelunasan dapat berubah sewaktu-waktu sesuai kebutuhan.</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <div class="terms-section-title">6. Penerbitan Tiket</div>
+        <ul class="terms-list">
+          <li>Tiket tidak dapat menunggu hasil visa. Pengajuan dokumen visa harap dilakukan sesegera mungkin setelah pendaftaran.</li>
+          <li>Penyelenggara berhak menerbitkan tiket sebelum batas waktu pelunasan sesuai <em>time limit</em> maskapai.</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <div class="terms-section-title">7. Keterlambatan Pembayaran</div>
+        <ul class="terms-list">
+          <li>Keterlambatan pembayaran dapat dikenakan sanksi berupa pembatalan kursi tanpa pengembalian dana. Peserta tetap wajib membayar biaya tour yang telah timbul sesuai ketetapan wholesaler.</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <div class="terms-section-title">8. Kebijakan Pembatalan — Rute Asia</div>
+        <ul class="terms-list">
+          <li>Setelah pembayaran DP: DP hangus.</li>
+          <li>Pembatalan karena alasan medis (dengan bukti resmi): &gt;35 hari = 50% DP hangus | 28–34 hari = 100% DP hangus | 22–27 hari = Refund 30% | 9–21 hari = Refund 20% | 1–8 hari = Refund 10%.</li>
+          <li>Kebijakan ini dapat tidak berlaku untuk penerbangan charter flight atau vendor khusus.</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <div class="terms-section-title">9. Force Majeure</div>
+        <ul class="terms-list">
+          <li>Pembatalan akibat keadaan kahar (pandemi dengan travel warning resmi, bencana alam besar) mengikuti kebijakan wholesaler.</li>
+          <li>Penyedia Konsorsium tidak bertanggung jawab atas force majeure seperti banjir, gempa bumi, dan lain-lain.</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <div class="terms-section-title">10. Ketentuan Refund Tambahan</div>
+        <ul class="terms-list">
+          <li>Permohonan banding nominal refund maksimal 15 hari sejak nominal ditetapkan. Keputusan bersifat final.</li>
+          <li>Tipping dikembalikan penuh untuk pembatalan di atas 7 hari sebelum keberangkatan.</li>
+          <li>Biaya visa yang telah diajukan tidak dapat dikembalikan.</li>
+          <li>Maskapai tertentu (AirAsia, Batik Air, dll): deposit tidak dapat dikembalikan dengan alasan apa pun.</li>
+          <li>Pengembalian dana penuh diberikan apabila konsorsium tidak memenuhi kuota minimum keberangkatan.</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <div class="terms-section-title">11. Ketentuan Keimigrasian</div>
+        <ul class="terms-list">
+          <li>Penolakan atau keterlambatan penerbitan visa bukan tanggung jawab penyelenggara.</li>
+          <li>Tidak ada pengembalian dana jika peserta tidak dapat melewati proses imigrasi atau terbukti melakukan pelanggaran hukum.</li>
+          <li>Wholesaler berhak menolak memberangkatkan peserta yang berpotensi menjadi <em>illegal stayer</em>.</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <div class="terms-section-title">12. Perubahan Jadwal dan Ketentuan Operasional</div>
+        <ul class="terms-list">
+          <li>Jadwal tour, hotel, maupun maskapai dapat berubah sewaktu-waktu demi kenyamanan peserta.</li>
+          <li>Jadwal penerbangan transit dapat berubah mengikuti kebijakan maskapai.</li>
+          <li>Apabila peserta kurang dari kuota minimum, group tetap dapat diberangkatkan tanpa tour leader dengan asistensi virtual.</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <div class="terms-section-title">13. Ketentuan Khusus</div>
+        <ul class="terms-list">
+          <li>Pemindahan ke group series berikutnya mengikuti harga tertinggi, maksimal 60 hari dari tanggal keberangkatan (tidak berlaku peak season).</li>
+          <li>Untuk Visa Group China, penyelenggara berhak menilai kelayakan peserta.</li>
+          <li>Paket tour dengan shopping stop mewajibkan peserta mengikuti kunjungan — penalti wajib apabila tidak mengikuti.</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <div class="terms-section-title">14. Asuransi Perjalanan</div>
+        <ul class="terms-list">
+          <li>Polis asuransi perjalanan yang termasuk dalam paket merupakan asuransi group atas nama PT Indah Tamasya Sentosa.</li>
+          <li>Seluruh keputusan klaim asuransi merupakan kewenangan pihak asuransi dan bersifat final.</li>
+          <li>PT Indah Tamasya Sentosa berhak melakukan pemotongan biaya administrasi sesuai kebutuhan dalam proses klaim.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div><!-- end .content -->
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-title">✦ &nbsp; Terima Kasih Telah Mempercayai Kami &nbsp; ✦</div>
+    <div class="footer-sub">
+      Rules (Term and Condition) telah diatur sesuai dengan yang ditetapkan oleh wholesaler dan tidak dapat diganggu gugat.<br>
+      Apabila ada pertanyaan, silakan hubungi tim kami.
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

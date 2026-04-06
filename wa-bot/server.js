@@ -258,10 +258,18 @@ async function generateReply(phone, userMessage) {
   }
 }
 
+// ── WEBHOOK VERIFICATION (Fonnte requires GET too) ───────
+app.get('/webhook', (req, res) => {
+  res.json({ status: 'ok', service: 'EastXperience WA Bot' });
+});
+
 // ── MAIN WEBHOOK ─────────────────────────────────────────
 app.post('/webhook', async (req, res) => {
   // Fonnte sends data in various formats
   const data = req.body;
+
+  console.log(`📩 Webhook hit. Body keys: ${Object.keys(data).join(', ')}`);
+  console.log(`📩 Raw body: ${JSON.stringify(data).substring(0, 300)}`);
 
   const phone = data.sender || data.phone || data.from;
   const message = data.message || data.text || data.body || '';
@@ -269,6 +277,7 @@ app.post('/webhook', async (req, res) => {
 
   // Ignore if no phone or message
   if (!phone || !message) {
+    console.log(`⚠️  Ignored: no phone (${phone}) or message (${message})`);
     return res.json({ status: 'ignored' });
   }
 

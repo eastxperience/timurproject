@@ -333,7 +333,7 @@ app.post('/broadcast', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 EastXperience WA Bot running on port ${PORT}`);
   console.log(`📱 WA Number: +${WA_NUMBER}`);
 });

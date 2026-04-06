@@ -7,21 +7,38 @@
  * Deploy: Railway / Render (free tier)
  */
 
+// ── CRASH GUARDS (must be first) ─────────────────────────
+process.on('uncaughtException', (err) => {
+  console.error('💥 uncaughtException:', err.message, err.stack);
+});
+process.on('unhandledRejection', (reason) => {
+  console.error('💥 unhandledRejection:', reason);
+});
+
 const express = require('express');
 const axios = require('axios');
-const Anthropic = require('@anthropic-ai/sdk');
 
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // ── CONFIG ──────────────────────────────────────────────
-const FONNTE_TOKEN = process.env.FONNTE_TOKEN;       // dari dashboard fonnte.com
-const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY; // dari console.anthropic.com
+const FONNTE_TOKEN = process.env.FONNTE_TOKEN;
+const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY;
 const PORT = process.env.PORT || 3000;
 const WA_NUMBER = '62811342473';
 
-const anthropic = new Anthropic({ apiKey: ANTHROPIC_KEY });
+console.log(`⚙️  Config: PORT=${PORT}, FONNTE=${FONNTE_TOKEN ? '✅' : '❌'}, ANTHROPIC=${ANTHROPIC_KEY ? '✅' : '❌'}`);
+
+// ── LAZY ANTHROPIC INIT ──────────────────────────────────
+let _anthropic = null;
+function getAnthropic() {
+  if (!_anthropic) {
+    const { default: Anthropic } = require('@anthropic-ai/sdk');
+    _anthropic = new Anthropic({ apiKey: ANTHROPIC_KEY });
+  }
+  return _anthropic;
+}
 
 // ── IN-MEMORY CONVERSATION STATE ───────────────────────
 // Untuk production: ganti dengan Redis atau DB
@@ -224,7 +241,7 @@ async function generateReply(phone, userMessage) {
   }
 
   try {
-    const response = await anthropic.messages.create({
+    const response = await getAnthropic().messages.create({
       model: 'claude-haiku-4-5-20251001', // Fast + affordable for chatbot
       max_tokens: 400,
       system: SYSTEM_PROMPT,

@@ -816,6 +816,37 @@ footer{
   .why-section,.exp-section,.testi-section,.steps-section,.faq-section,.cta-section{padding:70px 20px}
   .hero{padding:90px 20px 60px}
 }
+
+/* ═══ HERO PHOTO BG ═══ */
+.hero-photo-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1596778402253-9eadc8ac9578?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.13;
+  z-index: 0;
+}
+
+/* ═══ DESTINATION PHOTOS ═══ */
+.dest-photos { padding: 80px 0; background: var(--navy); }
+.dest-photos-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.dest-photos-header { text-align: center; margin-bottom: 48px; }
+.dest-photos-eyebrow { font-family: 'Outfit', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--coral); margin-bottom: 12px; }
+.dest-photos-title { font-family: 'Playfair Display', serif; font-size: clamp(28px, 4vw, 46px); color: #fff; margin-bottom: 16px; }
+.dest-photos-sub { font-family: 'Outfit', sans-serif; font-size: 16px; color: rgba(255,255,255,0.6); max-width: 560px; margin: 0 auto; line-height: 1.7; }
+.dest-photos-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 280px 280px; gap: 10px; }
+.dest-photo-item { position: relative; overflow: hidden; border-radius: 12px; background: var(--navy2); }
+.dest-photo-item.dest-photo-large { grid-column: span 2; grid-row: span 2; }
+.dest-photo-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; display: block; }
+.dest-photo-item:hover img { transform: scale(1.06); }
+.dest-photo-label { position: absolute; bottom: 0; left: 0; right: 0; padding: 28px 16px 14px; background: linear-gradient(to top, rgba(0,0,0,0.72), transparent); color: #fff; font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.3px; }
+@media (max-width: 768px) {
+  .dest-photos-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; gap: 8px; }
+  .dest-photo-item.dest-photo-large { grid-column: span 2; height: 220px; }
+  .dest-photo-item { height: 160px; }
+}
+
 </style>
 </head>
 <body>
@@ -839,6 +870,7 @@ footer{
 
 <!-- ═══ HERO ═══ -->
 <section class="hero">
+  <div class="hero-photo-bg"></div>
   <div class="hero-blobs">
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
@@ -945,6 +977,40 @@ footer{
     <div class="marquee-item">Best Price Guaranteed</div>
   </div>
 </div>
+
+
+<!-- ═══ DESTINATION PHOTOS ═══ -->
+<section class="dest-photos">
+  <div class="dest-photos-inner">
+    <div class="dest-photos-header">
+      <p class="dest-photos-eyebrow">The Destination</p>
+      <h2 class="dest-photos-title">Labuan Bajo &amp; Beyond</h2>
+      <p class="dest-photos-sub">From Komodo's legendary dragons to pristine pink sand beaches and world-class diving — Indonesia's most spectacular frontier.</p>
+    </div>
+    <div class="dest-photos-grid">
+      <div class="dest-photo-item dest-photo-large">
+        <img src="https://images.unsplash.com/photo-1596778402253-9eadc8ac9578?auto=format&fit=crop&w=900&q=80" alt="Aerial view Komodo National Park" loading="lazy">
+        <div class="dest-photo-label">📍 Komodo National Park</div>
+      </div>
+      <div class="dest-photo-item">
+        <img src="https://images.unsplash.com/photo-1580541631950-7282082b53ce?auto=format&fit=crop&w=500&q=80" alt="Komodo Dragon in the wild" loading="lazy">
+        <div class="dest-photo-label">🐉 Komodo Dragons</div>
+      </div>
+      <div class="dest-photo-item">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80" alt="Pink Beach" loading="lazy">
+        <div class="dest-photo-label">🏖 Pink Beach</div>
+      </div>
+      <div class="dest-photo-item">
+        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=500&q=80" alt="Snorkeling crystal waters" loading="lazy">
+        <div class="dest-photo-label">🤿 Crystal Waters</div>
+      </div>
+      <div class="dest-photo-item">
+        <img src="https://images.unsplash.com/photo-1569163139599-0f4517e36f51?auto=format&fit=crop&w=500&q=80" alt="Phinisi liveaboard sunset" loading="lazy">
+        <div class="dest-photo-label">⛵ Phinisi Liveaboard</div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ═══ WHY DIRECT ═══ -->
 <section class="why-section">
